@@ -10,12 +10,8 @@ from ipywidgets import Layout
 
 mpl.rcParams['pdf.fonttype'] = 42
 mpl.rcParams['ps.fonttype'] = 42
-mpl.rc('font',**{'family':'sans-serif','sans-serif':['Arial']})
+# mpl.rc('font',**{'family':'sans-serif','sans-serif':['Arial']})
 mpl.rcParams['font.size'] = 16
-
-import warnings
-warnings.filterwarnings("ignore", category=UserWarning, module='matplotlib.font_manager')
-
 
 colours = {
     "green": "#00B828",
