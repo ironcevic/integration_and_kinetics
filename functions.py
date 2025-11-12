@@ -8,6 +8,8 @@ import matplotlib as mpl
 from ipywidgets import interact, FloatSlider
 from ipywidgets import Layout
 
+from IPython.display import HTML, display
+
 mpl.rcParams['pdf.fonttype'] = 42
 mpl.rcParams['ps.fonttype'] = 42
 # mpl.rc('font',**{'family':'sans-serif','sans-serif':['Arial']})
@@ -66,8 +68,6 @@ def gauss(x, A, mu, sigma):
 
 def two_gauss(x, A1, mu1, s1, A2, mu2, s2):
     return gauss(x, A1, mu1, s1) + gauss(x, A2, mu2, s2)
-
-
 
 def first_order(t, y, k):
     title_text = f"d$[\\mathrm{{R}}]$/d$t$ = $-k [\\mathrm{{R}}]$"
